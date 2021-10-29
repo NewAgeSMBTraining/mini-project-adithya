@@ -10,7 +10,7 @@ import User from './components/users/User';
 import Userleavestatus from './components/userleavestatus/Userleavestatus';
 import Authenticate from './components/authenticate/Authenticate';
 import Forgotpass from './components/forgotpassword/Forgotpass';
-
+import Userprofupdt from './components/userprofileupdate/Userprofupdt';
 
 function App() {
 
@@ -33,6 +33,7 @@ function App() {
         <Authenticate path="/userleaves"><Userleaves/></Authenticate>
         <Authenticate path="/user"><User/></Authenticate>
         <Authenticate path="/userleavestatus"><Userleavestatus/></Authenticate>
+        <Authenticate path="/updateuser"><Userprofupdt/></Authenticate>
         <Route exact path="/forgotpass" component={Forgotpass}/>
         
       </Switch>

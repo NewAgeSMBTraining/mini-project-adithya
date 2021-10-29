@@ -31,6 +31,9 @@ function Userheader() {
             <a className="nav-link active" href="/userleavestatus">
               Leave Status
             </a>
+            <a className="nav-link active" href="/updateuser">
+              Update profile
+            </a>
           </div>
         </div>
         <div className="navbar-nav logout">
