@@ -23,6 +23,10 @@ function Leaves() {
       }    
       axios.put(`http://localhost:4000/leave/${p}`,e).then((response)=>{
       console.log(response)
+      if(response){
+        alert("Success")
+        window.location.reload();
+      }
     })
     }
     
@@ -33,6 +37,10 @@ function Leaves() {
       } 
       axios.put(`http://localhost:4000/leave/${p}`,e).then((response)=>{
       console.log(response)
+      if(response){
+        alert("Success")
+        window.location.reload();
+      }
     })
     }
 

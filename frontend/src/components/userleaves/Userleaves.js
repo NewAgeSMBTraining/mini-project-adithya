@@ -23,13 +23,15 @@ function Userleaves() {
     setDaata(obj)
     console.log(obj)
     console.log(daata)
-
+    axios.post('http://localhost:4000/leave',obj).then((response)=>{
+        if(response){
+            alert("Success")
+        }
+    })
         
     }
-   const clickk=()=>{
+
      
-    axios.post('http://localhost:4000/leave',daata).then((response)=>{
-   })}
 
 
     return (
@@ -73,7 +75,7 @@ function Userleaves() {
                                 </div>
 
                                 <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary" onClick={()=>{clickk()}}>
+                                        <button type="submit" class="btn btn-primary">
                                         Submit
                                         </button>
                                     </div>

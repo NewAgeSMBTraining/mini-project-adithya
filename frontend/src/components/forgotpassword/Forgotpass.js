@@ -57,6 +57,7 @@ function Forgotpass() {
                                         Reset
                                         </button>
                                     </div>
+                                    <div><a href="/" class="forgot">Login</a></div>
                                 </div>                            
                         </div>
                     </div>
